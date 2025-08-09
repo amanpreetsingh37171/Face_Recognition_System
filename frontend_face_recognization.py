@@ -39,7 +39,7 @@ while True:
 
 
     
-    cv2.putText(frame, f"{actors_name[label]}, confidence: {confidence}/-100", (x - 30, y - 30), cv2.FONT_HERSHEY_PLAIN, 2, (20, 240, 34), 3)
+        cv2.putText(frame, f"{actors_name[label]}, confidence: {confidence}/-100", (x - 30, y - 30), cv2.FONT_HERSHEY_PLAIN, 2, (20, 240, 34), 3)
 
 
 
@@ -47,4 +47,5 @@ while True:
     cv2.imshow("Face Recognition System", frame)
 
     if cv2.waitKey(20) & 0xFF == ord('d'):
+
         break
